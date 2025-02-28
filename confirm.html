@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body{  
+        font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            color: white;
+            margin-top:50px;
+    }
+    .mov {
+        background: #333;
+        padding: 15px;
+        border-radius: 10px;
+        width: 450px;
+        text-align: center;
+        height: auto;
+        gap:20px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 2px solid #ff5722;
+    }
+    img{
+        height:350px;
+        width:210px;
+        border:1px solid black;
+        border-radius:10px;
+    }
+
+    p{
+        margin-top:-20px;
+    }
+    h3{
+        margin-top:20px;
+    }
+    
+    h2{
+                text-align: left;
+                letter-spacing: 0.1em;
+                color: #ff5722;
+                font-size: 2em;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 25px;
+                position: relative;
+                display: inline-block;
+            }
+
+            h2::before {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                width: 50%;
+                height: 3px;
+                background: #ff5722;
+                transition: width 0.4s ease-in-out;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="mov">
+        <div style="height:350px; width:210px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1JmBdJFu0AJpolpQpmDqjpCP5t1bx-SD25sDFvR0F-XziELCU_yu-GPXSfIPh8tUiIDBVyckyheYvtK_gjDlXNJ7BcwOtUCg1XfB_" alt="movie poster">
+        </div>
+        <div style="width:65%; text-align: left;">        
+            <h2>Movie Name</h2>
+            <h3>Seats:</h3>
+            <p>A1, B2, C3</p>
+            <h3>Screen:</h3>
+            <p>##</p>
+            <h3>Show:</h3>
+            <p> DAY dd/mm/yyyy | hh:mm AM/PM | hh:mm</p>
+            <h3>Booking ID:</h3>
+            <p>WTNJZ9C</p>
+            <h3>Purchased On:</h3>
+            <p>dd/mm/yyyy</p>
+        </div>
+
+    </div>
+</body>
+</html>

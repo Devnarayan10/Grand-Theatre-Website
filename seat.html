@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre Seating</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+.left, .right {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(12, 40px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.seat {
+    display: none;
+}
+
+.seat-label {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    background-color: #444;
+    display: inline-block;
+}
+.seat:checked + .seat-label {
+    background-color: green;
+}
+.seat.taken + .seat-label {
+    background-color: red;
+    cursor: not-allowed;
+}
+.screen {
+    margin: 20px auto;
+    width: 50%;
+    height: 30px;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.bottom{
+    display:flex;
+    flex-direction:row;
+    gap:100px;
+    margin:auto;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <h1>Select Your Seats</h1>
+    <div class="screen">SCREEN</div>
+
+<div class="bottom">
+    <div class="left">
+       
+        <input type="checkbox" class="seat" id="seat1">
+        <label for="seat1" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat2">
+        <label for="seat2" class="seat-label"></label>
+
+        <input type="checkbox" class="seat taken" id="seat3" disabled>
+        <label for="seat3" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat4">
+        <label for="seat4" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat5">
+        <label for="seat5" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat6">
+        <label for="seat6" class="seat-label"></label>
+
+        <input type="checkbox" class="seat taken" id="seat7" disabled>
+        <label for="seat7" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat8">
+        <label for="seat8" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat9">
+        <label for="seat9" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat10">
+        <label for="seat10" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat11">
+        <label for="seat11" class="seat-label"></label>
+
+        <input type="checkbox" class="seat taken" id="seat12" disabled>
+        <label for="seat12" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat13">
+        <label for="seat13" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat14">
+        <label for="seat14" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat15">
+        <label for="seat15" class="seat-label"></label>
+    </div>
+    <div class="right">
+        <input type="checkbox" class="seat" id="seat16">
+        <label for="seat16" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat17">
+        <label for="seat17" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat18">
+        <label for="seat18" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat19">
+        <label for="seat19" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat20">
+        <label for="seat20" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat21">
+        <label for="seat21" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat22">
+        <label for="seat22" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat23">
+        <label for="seat23" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat24">
+        <label for="seat24" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat25">
+        <label for="seat25" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat26">
+        <label for="seat26" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat27">
+        <label for="seat27" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat28">
+        <label for="seat28" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat29">
+        <label for="seat29" class="seat-label"></label>
+
+        <input type="checkbox" class="seat" id="seat30">
+        <label for="seat30" class="seat-label"></label>
+    </div>
+</div>
+    <div class="top">
+        <input type="checkbox" class="seat" id="seat31">
+        <label for="seat31" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat32">
+        <label for="seat32" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat33">
+        <label for="seat33" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat34">
+        <label for="seat34" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat35">
+        <label for="seat35" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat36">
+        <label for="seat36" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat37">
+        <label for="seat37" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat38">
+        <label for="seat38" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat39">
+        <label for="seat39" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat40">
+        <label for="seat40" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat41">
+        <label for="seat41" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat42">
+        <label for="seat42" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat43">
+        <label for="seat43" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat44">
+        <label for="seat44" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat45">
+        <label for="seat45" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat46">
+        <label for="seat46" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat47">
+        <label for="seat47" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat48">
+        <label for="seat48" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat49">
+        <label for="seat49" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat50">
+        <label for="seat50" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat51">
+        <label for="seat51" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat52">
+        <label for="seat52" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat53">
+        <label for="seat53" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat54">
+        <label for="seat54" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat55">
+        <label for="seat55" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat56">
+        <label for="seat56" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat57">
+        <label for="seat57" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat58">
+        <label for="seat58" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat59">
+        <label for="seat59" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat60">
+        <label for="seat60" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat61">
+        <label for="seat61" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat62">
+        <label for="seat62" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat63">
+        <label for="seat63" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat64">
+        <label for="seat64" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat65">
+        <label for="seat65" class="seat-label"></label>
+        <input type="checkbox" class="seat" id="seat66">
+        <label for="seat66" class="seat-label"></label>
+    </div>
+
+<a href="confirm.html"><button style="font-size:25px; margin-top:25px; padding: 11px 45px; background-image: linear-gradient(#fb845f, #ff5722); color:white; border: 1px solid #fb845f; border-radius:7px">Confirm</button></a>
+
+</body>
+</html>
